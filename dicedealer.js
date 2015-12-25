@@ -33,7 +33,7 @@
       // store value
       this.value = value;
       this.property = {};
-    };
+    }
 
     /**
      * Get value
@@ -47,14 +47,14 @@
      */
     DiceFace.prototype.setProperty = function(propertyName, propertyValue) {
         this.property[propertyName] = propertyValue;
-    }
+    };
 
     /**
      * Get dice face property
      */
     DiceFace.prototype.getProperty = function(propertyName) {
         return this.property[propertyName];
-    }
+    };
 
     /***************************************
      * Dice
@@ -69,32 +69,32 @@
      */
     Dice.prototype.getName = function() {
       return this.name;
-    }
+    };
 
     /**
      * Get number of faces
      */
     Dice.prototype.getNumberOfFaces = function() {
         return this.faces.length;
-    }
+    };
 
     /**
      * Add dice face
      */
     Dice.prototype.addFace = function(diceFace) {
       this.faces.push(diceFace);
-    }
+    };
 
     /**
      * Throw dice
      */
     Dice.prototype.throw = function(){
       // generate random index
-      var randomIndex = Math.floor(Math.random() * this.getNumberOfFaces()) + 1
+      var randomIndex = Math.floor(Math.random() * this.getNumberOfFaces()) + 1;
 
       // return random face
       return this.faces[--randomIndex];
-    }
+    };
 
     DiceDealer.DiceFace = DiceFace;
     DiceDealer.Dice = Dice;
