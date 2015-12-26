@@ -71,6 +71,14 @@
       return this.name;
     };
 
+
+    /**
+     * Get faces
+     */
+    Dice.prototype.getFaces = function() {
+      return this.faces;
+    }
+
     /**
      * Get number of faces
      */

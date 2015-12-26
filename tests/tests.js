@@ -72,6 +72,35 @@ QUnit.test('Getting number of dice faces', function(assert) {
   assert.equal(dice.getNumberOfFaces(), 3, 'get number of faces (3)');
 });
 
+
+
+/**
+ * Test throwing dices
+ */
+QUnit.test('Test getting faces', function(assert) {
+  // create 6 dice faces
+  var diceFace1 = new DiceDealer.DiceFace(1);
+  var diceFace2 = new DiceDealer.DiceFace(2);
+  var diceFace3 = new DiceDealer.DiceFace(3);
+  var diceFace4 = new DiceDealer.DiceFace(4);
+  var diceFace5 = new DiceDealer.DiceFace(5);
+  var diceFace6 = new DiceDealer.DiceFace(6);
+
+  // create dice
+  var dice = new DiceDealer.Dice("d6");
+  dice.addFace(diceFace1);
+  dice.addFace(diceFace2);
+  dice.addFace(diceFace3);
+  dice.addFace(diceFace4);
+  dice.addFace(diceFace5);
+  dice.addFace(diceFace6);
+
+  // get faces
+  var faces = dice.getFaces();
+
+  assert.equal(faces.length, 6, 'get faces length');
+});
+
 /**
  * Test throwing dices
  */
@@ -87,7 +116,7 @@ QUnit.test('Test throwing dices', function(assert) {
   var diceFace6 = new DiceDealer.DiceFace(6);
 
   // create dice
-  var dice = new DiceDealer.Dice("number");
+  var dice = new DiceDealer.Dice("d6");
   dice.addFace(diceFace1);
   dice.addFace(diceFace2);
   dice.addFace(diceFace3);
