@@ -2,24 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>DiceDealer: RequireJS example</title>
+		<title>JSDiceDealer: RequireJS example</title>
 	</head>
 	<body></body>
 	<script src="../thirdparty/require.js"></script>
 	<script>
 
-		requirejs(['../dicedealer'], function(DiceDealer){
+		requirejs(['../jsdicedealer'], function(JSDiceDealer){
 
 			// create 6 dice faces
-		  var diceFace1 = new DiceDealer.DiceFace(1);
-		  var diceFace2 = new DiceDealer.DiceFace(2);
-		  var diceFace3 = new DiceDealer.DiceFace(3);
-		  var diceFace4 = new DiceDealer.DiceFace(4);
-		  var diceFace5 = new DiceDealer.DiceFace(5);
-		  var diceFace6 = new DiceDealer.DiceFace(6);
+		  var diceFace1 = new JSDiceDealer.DiceFace(1);
+		  var diceFace2 = new JSDiceDealer.DiceFace(2);
+		  var diceFace3 = new JSDiceDealer.DiceFace(3);
+		  var diceFace4 = new JSDiceDealer.DiceFace(4);
+		  var diceFace5 = new JSDiceDealer.DiceFace(5);
+		  var diceFace6 = new JSDiceDealer.DiceFace(6);
 
 		  // create dice
-		  var dice = new DiceDealer.Dice("d6");
+		  var dice = new JSDiceDealer.Dice("d6");
 		  dice.addFace(diceFace1);
 		  dice.addFace(diceFace2);
 		  dice.addFace(diceFace3);

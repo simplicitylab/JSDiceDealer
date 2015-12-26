@@ -1,12 +1,12 @@
 /*****************************************************************
  *
- * DiceDealer
+ * JSDiceDealer
  *
  * Written by Glennn De Backer <glenn at simplicity dot be>.
  *
  *****************************************************************/
 /****************************
- * DiceDealer
+ * JSDiceDealer
  ****************************/
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -19,12 +19,12 @@
         module.exports = factory();
     } else {
         // Browser globals (root is window)
-        root.DiceDealer = factory();
+        root.JSDiceDealer = factory();
     }
 }(this, function() {
     "use strict";
 
-    var DiceDealer = {};
+    var JSDiceDealer = {};
 
     /***************************************
      * DiceFace
@@ -104,8 +104,8 @@
       return this.faces[--randomIndex];
     };
 
-    DiceDealer.DiceFace = DiceFace;
-    DiceDealer.Dice = Dice;
+    JSDiceDealer.DiceFace = DiceFace;
+    JSDiceDealer.Dice = Dice;
 
-    return DiceDealer;
+    return JSDiceDealer;
 }));
