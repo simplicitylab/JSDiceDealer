@@ -20,7 +20,7 @@ QUnit.test('Getting dice face value', function(assert) {
 });
 
 /**
- * Setting dice property
+ * Setting and getting dice face property
  */
 QUnit.test('Getting dice face property', function(assert) {
   var diceFace = new JSDiceDealer.DiceFace('pork');
@@ -41,6 +41,18 @@ QUnit.test('Getting dice value', function(assert) {
 
   assert.equal(dice.getName(), 'test', 'getting string name');
   assert.equal(dice2.getName(), 123, 'getting number name');
+});
+
+/**
+ * Getting and setting dice property
+ */
+QUnit.test('Getting dice property', function(assert) {
+  var dice = new JSDiceDealer.Dice('d6');
+  dice.setProperty('color', 'yellow');
+  dice.setProperty('weight', 123456);
+
+  assert.equal(dice.getProperty('color'), 'yellow', 'getting string dice property');
+  assert.equal(dice.getProperty('weight'), 123456, 'getting  number dice property');
 });
 
 /**

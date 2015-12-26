@@ -61,6 +61,7 @@
      ***************************************/
     function Dice(name) {
       this.name = name;
+      this.property = {};
       this.faces = [];
     }
 
@@ -71,6 +72,19 @@
       return this.name;
     };
 
+    /**
+     * Set dice  property
+     */
+    Dice.prototype.setProperty = function(propertyName, propertyValue) {
+        this.property[propertyName] = propertyValue;
+    };
+
+    /**
+     * Get dice property
+     */
+    Dice.prototype.getProperty = function(propertyName) {
+        return this.property[propertyName];
+    };
 
     /**
      * Get faces

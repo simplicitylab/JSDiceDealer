@@ -26,12 +26,14 @@ dice.addFace(diceFace5);
 dice.addFace(diceFace6);
 ```
 
+
+
 ### Throwing a dice
 
 ```javascript
 // throw dice
 var face = dice.throw();
 
-// get thrown face 
+// get thrown face
 console.log(face.getValue());
 ```
