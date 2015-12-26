@@ -2,6 +2,11 @@
 
 JSDiceDealer is a small javascript game dice library that contains utilities for creating and handling dices. It is especially suited for creating web-based dice games.
 
+## Loading support
+
+* Classic loading. Loading through script src, objects accesible through JSCardDealer namespace.
+* AMD/Require.JS
+
 ## Usage
 
 ### Creating a dice
