@@ -27,6 +27,29 @@ dice.addFace(diceFace6);
 ```
 
 
+### Setting and getting dice faces properties
+
+```javascript
+
+// create a dice face
+var diceFace = new JSDiceDealer.DiceFace(1); // value 1
+diceFace.setProperty('color', 'green');
+...
+console.log(diceFace.getProperty('color')); // green
+```
+
+
+### Setting and getting dice  properties
+
+```javascript
+
+// create a dice
+var dice = new JSDiceDealer.Dice('d6');
+dice.setProperty('color', 'red');
+...
+console.log(dice.getProperty('color')); // green
+```
+
 
 ### Throwing a dice
 
